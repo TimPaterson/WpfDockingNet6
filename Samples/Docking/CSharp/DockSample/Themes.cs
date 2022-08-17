@@ -7,7 +7,7 @@ namespace DevZest.DockSample
 {
     public static class Themes
     {
-        static ResourceDictionary s_currentTheme = null;
+        static ResourceDictionary? s_currentTheme = null;
 
         public static void Load(string themeName)
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Reflection;
 using System.Windows;
@@ -7,7 +7,7 @@ namespace DevZest.Windows.Docking
 {
     public static class Themes
     {
-        static ResourceDictionary s_currentTheme = null;
+        static ResourceDictionary? s_currentTheme = null;
 
         public static void Load(string themeName)
         {

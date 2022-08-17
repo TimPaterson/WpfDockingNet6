@@ -211,8 +211,9 @@ namespace DevZest.Windows.Docking
                 {
                     try
                     {
-                        IPermission permission = new UIPermission(UIPermissionWindow.AllWindows);
-                        permission.Demand();
+                        // "Code Access Security is not supported or honored by the runtime"
+                        //IPermission permission = new UIPermission(UIPermissionWindow.AllWindows);
+                        //permission.Demand();
                         s_canBeNative = true;
                     }
                     catch (SecurityException)

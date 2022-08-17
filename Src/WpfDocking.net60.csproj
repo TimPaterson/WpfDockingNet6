@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <PackageId>DevZest.WpfDocking.Net50</PackageId>
-    <PackageProjectUrl>https://github.com/arcticlab-dev/WpfDocking</PackageProjectUrl>
+    <PackageId>DevZest.WpfDocking.Net60</PackageId>
+    <PackageProjectUrl>https://wpfdocking.devzest.com/</PackageProjectUrl>
     <Description>A docking library to integrate undo/redo-able tabbed docking, floating and auto hide window management into your application in minutes.</Description>
-    <PackageReleaseNotes>Target .NET 5.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Target .NET 6.0</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>DevZest WPF Docking</PackageTags>
     <RootNamespace>DevZest</RootNamespace>
@@ -18,6 +18,18 @@
     <Copyright>Copyright © DevZest. All rights reserved.</Copyright>
     <FileVersion>3.0.6248.0</FileVersion>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>DevZest WPF Docking for .NET 6.0</Title>
+    <RepositoryUrl>https://github.com/TimPaterson/WpfDockingNet6</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
